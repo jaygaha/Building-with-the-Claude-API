@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from an S3 URI in the format 's3://bucket-name/key/path'",
+    "format": "regex"
+  },
+  {
+    "task": "Create a JSON configuration object for an AWS Lambda function that specifies the function name, runtime (python3.11), memory (256 MB), and timeout (30 seconds)",
+    "format": "json"
+  },
+  {
+    "task": "Write a Python function that takes an AWS IAM policy document (as a dictionary) and returns a list of all the Action strings granted by the policy",
+    "format": "python"
+  }
+]

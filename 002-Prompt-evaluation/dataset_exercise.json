@@ -1,0 +1,17 @@
+[
+    {
+        "task": "Parse an AWS S3 bucket name from a full S3 URI path (e.g., 's3://my-bucket-name/folder/file.txt') and extract just the bucket name",
+        "format": "regex",
+        "solution_criteria": "The regex should correctly extract bucket names from S3 URIs, handling buckets with hyphens and numbers, and should not match the path components after the bucket name"
+    },
+    {
+        "task": "Convert an AWS CloudFormation template JSON object to include a new S3 bucket resource with versioning enabled",
+        "format": "json",
+        "solution_criteria": "The JSON should be valid CloudFormation syntax, include a new S3 bucket resource with VersioningConfiguration enabled, and maintain the structure of existing resources"
+    },
+    {
+        "task": "Write a Python function that takes an AWS IAM policy document as a dictionary and returns a list of all Action permissions granted in the policy",
+        "format": "python",
+        "solution_criteria": "The function should handle both string and list values for Action fields, extract all unique actions across all statements, and return them as a flat list"
+    }
+]

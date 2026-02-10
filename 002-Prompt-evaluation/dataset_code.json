@@ -1,0 +1,14 @@
+[
+    {
+        "task": "Parse an AWS S3 bucket name from an S3 URI string (e.g., 's3://my-bucket/path/to/file.txt')",
+        "format": "regex"
+    },
+    {
+        "task": "Create a CloudFormation template JSON object that defines a basic EC2 security group allowing HTTP and HTTPS traffic",
+        "format": "json"
+    },
+    {
+        "task": "Write a Python function that takes an AWS IAM ARN string and returns the service name (e.g., 'iam', 's3', 'lambda')",
+        "format": "python"
+    }
+]
