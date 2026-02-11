@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training with carbohydrate loading and high caloric intake (5000+ calories) for a 20km long run scheduled at 7am",
+      "restrictions": "Vegetarian, no dairy"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 1 day of meals with timing aligned to 7am training session",
+      "Total daily calories meet high-endurance athlete needs (minimum 4500 calories)",
+      "Carbohydrates comprise 60-70% of total calories with strategic pre/post-workout timing",
+      "All meals respect vegetarian and dairy-free restrictions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carbohydrate loading, with specific timing around training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Maximize strength and muscle recovery with optimized protein distribution for weightlifting training",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with 4-5 meals/snacks",
+      "Protein distributed across all meals (minimum 25g per meal)",
+      "Includes dedicated post-workout nutrition within 1-2 hours of training",
+      "Total daily calories and macros appropriate for strength athlete recovery"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) emphasizing protein distribution throughout the day and recovery nutrition post-workout"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "72",
+      "goal": "endurance training with muscle maintenance",
+      "restrictions": "vegan, nut-free, gluten-free"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 3 meals covering full day",
+      "All meals comply with vegan, nut-free, and gluten-free restrictions",
+      "Includes adequate protein sources (legumes, tofu, seeds) to support muscle maintenance",
+      "Provides sufficient carbohydrates and healthy fats for endurance training energy needs"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete with dietary restrictions (vegetarian/vegan or allergies like nut-free) requiring creative substitutions while maintaining nutritional balance"
+  }
+]

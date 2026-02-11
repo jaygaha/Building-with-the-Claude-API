@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Fuel a 20km long run training session with optimal carbohydrate timing and recovery",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers a full day with breakfast, pre-run meal, during-run fueling strategy, and post-run recovery meal",
+      "Carbohydrate intake is prioritized with timing aligned to the long training session",
+      "Plan is compact and concise (fits on one page or brief format)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-performance endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around long training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "95",
+      "goal": "Maximize strength and power for weightlifting competition in 8 weeks",
+      "restrictions": "Lactose intolerant"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with at least 4 meals/snacks timed around heavy resistance training",
+      "Provides minimum 1.9g protein per kg body weight distributed across meals",
+      "Includes pre-workout and post-workout nutrition within appropriate timeframes",
+      "Respects lactose intolerance restriction throughout all meals"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) with specific protein requirements and meal timing around heavy resistance training"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "Swimmer preparing for a competitive meet tomorrow with minimal digestive discomfort during training",
+      "restrictions": "Lactose intolerant, no nuts or peanuts"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 3 meals suited for a 75kg athlete with appropriate caloric distribution for swim training",
+      "All foods are lactose-free and nut-free",
+      "Meals are easily digestible and suitable for pre-competition preparation",
+      "Plan is presented in a compact, single-day format with clear timing"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific constraint (e.g., swimmer preparing for competition with digestive considerations, or soccer player with limited access to certain food types)"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training - high-endurance athlete requiring carbohydrate loading and proper fueling around 2-hour morning run",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus pre/during/post-workout nutrition for a 2-hour endurance session",
+      "Total daily calories and carbohydrate intake appropriate for marathon training (approximately 3000+ calories with 60% carbs)",
+      "Pre-workout meal timed 2-3 hours before run and post-workout recovery meal within 30-60 minutes of completion",
+      "All meals adhere to vegetarian diet and contain no nuts"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring significant caloric intake and carbohydrate loading with specific timing around training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Muscle building and strength gains with optimal protein distribution for recovery",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers full day (breakfast, lunch, dinner, snacks) with 4-5 eating occasions",
+      "Protein distributed evenly across meals (minimum 30g per meal, 150-170g total daily)",
+      "Includes recovery-focused meals with carbohydrates and protein post-workout",
+      "Compact format with clear meal descriptions and approximate macronutrients"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength-focused athlete (weightlifter) emphasizing protein distribution throughout the day and recovery-focused meals with muscle-building macronutrients"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "Optimize energy and recovery for competitive swimmer with two daily training sessions (morning 90-min, evening 60-min)",
+      "restrictions": "Lactose intolerant"
+    },
+    "solution_criteria": [
+      "Meal plan includes 4-5 eating occasions strategically timed around training sessions",
+      "Hydration strategy explicitly addresses fluid intake before, during, and after water-based training",
+      "Macronutrient distribution supports high energy expenditure (estimated 3500+ calories) with adequate protein for recovery",
+      "All meals and snacks accommodate lactose-free requirement"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific athlete (swimmer) requiring balanced hydration awareness, meal timing around water-based training, and energy management for multiple sessions per day"
+  }
+]

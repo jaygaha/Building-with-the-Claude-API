@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "182",
+      "weight": "75",
+      "goal": "Marathon preparation with carbohydrate loading for high-endurance performance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus snacks for one day",
+      "Total daily calories support high-endurance athlete needs (approximately 3000-3500 calories)",
+      "Carbohydrates comprise 60-70% of total calories for endurance fuel",
+      "Meals are practical and compact in description format"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring maximum caloric intake and carbohydrate loading, with no dietary restrictions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "85 kg",
+      "goal": "muscle building and strength recovery for weightlifting",
+      "restrictions": "vegetarian"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals for one day",
+      "High protein content (minimum 120g daily) from vegetarian sources",
+      "Includes foods supporting muscle recovery and strength training nutrition"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength-focused athlete (weightlifter) requiring high protein content and muscle recovery nutrition, with a vegetarian dietary constraint"
+  },
+  {
+    "prompt_inputs": {
+      "height": "183",
+      "weight": "82",
+      "goal": "High-performance fuel for competitive swimming with optimal recovery",
+      "restrictions": "No nuts or shellfish"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one day (breakfast, lunch, dinner, and snacks)",
+      "Includes balanced macronutrients appropriate for an endurance athlete (adequate carbohydrates and protein)",
+      "All foods comply with stated allergies (no nuts or shellfish)",
+      "Plan is concise and practical for quick reference"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific athlete (professional swimmer) requiring balanced macronutrients for energy and recovery, with an allergy constraint (nuts or shellfish)"
+  }
+]
