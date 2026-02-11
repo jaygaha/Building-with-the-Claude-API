@@ -1,0 +1,38 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "The genealogy of modern subjectivity traces through Enlightenment rationalism and Romantic introspection, yet postcolonial theorists have demonstrated how Western epistemologies obscured non-European modes of selfhood. Drawing on Foucault's analysis of disciplinary power, scholars have examined how colonial institutions shaped consciousness across colonized populations, while simultaneously, feminist historiography has recovered women's intellectual contributions that traditional narratives rendered invisible. These intersecting genealogies reveal that the autonomous subject\u2014so central to liberal political theory\u2014emerges not as a universal category but as a historically contingent formation embedded in networks of power, knowledge production, and cultural representation. Contemporary work in affect theory further complicates this picture by questioning whether emotions and embodied experience can be recuperated outside the frameworks that have historically pathologized non-Western and non-masculine forms of being."
+    },
+    "solution_criteria": [
+      "Identifies both explicit topics (e.g., Enlightenment, postcolonial theory, Foucault) and implicit cross-disciplinary themes (e.g., power, subjectivity, epistemology, historiography)",
+      "Recognizes nuanced conceptual connections such as the relationship between colonialism and consciousness, rather than treating them as isolated keywords",
+      "Captures discipline-spanning topics (philosophy, history, literary/cultural studies, feminist theory, affect theory) that emerge from the passage's argumentative structure"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\n    ",
+    "scenario": "Testing with a humanities passage containing implicit themes across multiple disciplines (e.g., a literature review discussing philosophy, history, and cultural studies) to verify the prompt can identify nuanced, cross-domain topics rather than just explicit keywords"
+  },
+  {
+    "prompt_inputs": {
+      "content": "We implemented a convolutional neural network architecture with batch normalization and residual connections to classify high-resolution satellite imagery for land-use segmentation. Our model achieved 94.7% mean intersection-over-union (mIoU) across 12 land-cover classes using the Adam optimizer with learning rate decay (initial lr=0.001, decay=0.95 per epoch) and categorical cross-entropy loss. We trained on 50,000 augmented tiles (256\u00d7256 pixels) from Sentinel-2 multispectral data, employing random horizontal/vertical flips and 15-degree rotations. The network comprises 5 convolutional blocks with max-pooling, skip connections merging features at multiple scales, and a softmax output layer. Validation on 10,000 held-out tiles demonstrated robust generalization with minimal overfitting (training loss: 0.087, validation loss: 0.094), outperforming baseline U-Net (91.2% mIoU) and SegNet (89.8% mIoU) architectures on identical datasets."
+    },
+    "solution_criteria": [
+      "Extracts high-level research topics (e.g., 'deep learning for image segmentation', 'satellite image classification', 'neural network optimization') rather than implementation details or raw metrics",
+      "Avoids including low-level numerical values, hyperparameters, or dataset statistics as separate topics",
+      "Returns results as a JSON array of strings with meaningful, generalizable topic labels"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\n    ",
+    "scenario": "Testing with a highly technical scientific passage containing dense jargon, numerical data, and methodology descriptions to ensure the prompt extracts meaningful high-level topics (e.g., 'machine learning optimization') rather than low-level implementation details or raw statistics"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Cellular respiration is a fundamental metabolic pathway through which cells generate ATP, the primary energy currency of life. Mitochondrial function is central to this process, with the inner mitochondrial membrane housing the electron transport chain and ATP synthase complex. During oxidative phosphorylation, protons are pumped across the cristae, creating a chemiosmotic gradient that drives ATP production. In anaerobic conditions, cells rely on glycolysis and fermentation to produce ATP, though these pathways generate significantly less energy per glucose molecule than aerobic respiration. The efficiency of ATP synthesis is regulated by cellular energy demands, with uncoupling proteins in brown adipose tissue allowing mitochondria to dissipate the proton gradient as heat rather than producing ATP, a process crucial for thermogenesis in mammals."
+    },
+    "solution_criteria": [
+      "Extracts all distinct topics mentioned, including both broad concepts (cellular respiration, mitochondrial function) and specific mechanisms (electron transport chain, ATP synthase, chemiosmotic gradient, oxidative phosphorylation)",
+      "Handles hierarchical relationships appropriately\u2014either grouping related subtopics under parent concepts or listing them separately with consistency",
+      "Returns output as a valid JSON array of strings"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\n    ",
+    "scenario": "Testing with a passage containing overlapping and hierarchical concepts (e.g., a biology article discussing 'cellular respiration', 'mitochondrial function', and 'ATP production') to evaluate whether the prompt groups related subtopics appropriately or lists them separately, and handles topic abstraction levels consistently"
+  }
+]

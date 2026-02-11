@@ -1,0 +1,51 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "72",
+      "goal": "Marathon training with carbohydrate loading and high calorie intake for sustained energy and recovery",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan contains 4-5 meals/snacks distributed throughout the day",
+      "Total daily calories align with high-endurance athlete needs (approximately 3000-3500 calories)",
+      "Carbohydrates comprise 60-70% of total calories for glycogen loading",
+      "Includes protein-rich foods for muscle recovery (1.2-1.6g per kg body weight)",
+      "Incorporates easily digestible meals around training sessions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high calorie intake and carbohydrate loading, ensuring the meal plan emphasizes sustained energy and recovery nutrition"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "90",
+      "goal": "muscle building for weightlifting competition",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 4-5 meals distributed throughout the day",
+      "Protein is prioritized and distributed across all meals (minimum 30g per meal)",
+      "Total daily macronutrients support muscle building (approximately 1.8-2.2g protein per kg bodyweight)",
+      "Plan is compact and concise (under 400 words)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength-sport athlete (weightlifter) with specific macronutrient ratios needed for muscle building, validating that the plan prioritizes protein distribution across meals"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "68",
+      "goal": "endurance cycling performance with sustained energy for 3+ hour rides",
+      "restrictions": "vegan (no animal products), nut allergy"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus snacks for one day",
+      "All foods are vegan and nut-free",
+      "Includes adequate plant-based protein sources (legumes, tofu, seeds, grains) to support endurance athlete needs",
+      "Provides sufficient carbohydrates and electrolytes appropriate for cycling performance"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete with dietary restrictions (vegan endurance cyclist) to verify the meal plan remains nutritionally complete while accommodating ethical/health constraints and alternative protein sources"
+  }
+]

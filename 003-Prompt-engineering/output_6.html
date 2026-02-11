@@ -1,0 +1,239 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">7.7 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">66.7%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a humanities passage containing implicit themes across multiple disciplines (e.g., a literature review discussing philosophy, history, and cultural studies) to verify the prompt can identify nuanced, cross-domain topics rather than just explicit keywords</td>
+                <td class="prompt-inputs"><strong>content:</strong> The genealogy of modern subjectivity traces through Enlightenment rationalism and Romantic introspection, yet postcolonial theorists have demonstrated how Western epistemologies obscured non-European modes of selfhood. Drawing on Foucault's analysis of disciplinary power, scholars have examined how colonial institutions shaped consciousness across colonized populations, while simultaneously, feminist historiography has recovered women's intellectual contributions that traditional narratives rendered invisible. These intersecting genealogies reveal that the autonomous subject—so central to liberal political theory—emerges not as a universal category but as a historically contingent formation embedded in networks of power, knowledge production, and cultural representation. Contemporary work in affect theory further complicates this picture by questioning whether emotions and embodied experience can be recuperated outside the frameworks that have historically pathologized non-Western and non-masculine forms of being.</td>
+                <td class="criteria">• Identifies both explicit topics (e.g., Enlightenment, postcolonial theory, Foucault) and implicit cross-disciplinary themes (e.g., power, subjectivity, epistemology, historiography)<br>• Recognizes nuanced conceptual connections such as the relationship between colonialism and consciousness, rather than treating them as isolated keywords<br>• Captures discipline-spanning topics (philosophy, history, literary/cultural studies, feminist theory, affect theory) that emerge from the passage's argumentative structure</td>
+                <td class="output"><pre>```json
+[
+  "modern subjectivity",
+  "Enlightenment rationalism",
+  "Romantic introspection",
+  "postcolonial theory",
+  "Western epistemologies",
+  "non-European modes of selfhood",
+  "Foucault",
+  "disciplinary power",
+  "colonial institutions",
+  "consciousness",
+  "colonized populations",
+  "feminist historiography",
+  "women's intellectual contributions",
+  "autonomous subject",
+  "liberal political theory",
+  "power and knowledge production",
+  "cultural representation",
+  "affect theory",
+  "emotions",
+  "embodied experience",
+  "non-Western forms of being",
+  "non-masculine forms of being"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary. It performs very well on secondary criteria by identifying explicit topics, implicit themes, and nuanced conceptual connections across disciplines. The main weaknesses are minor omissions of implicit cross-cutting themes (epistemology as a standalone concept, historiography as methodology) and slight inconsistency in how compound concepts are handled. These are refinement issues rather than fundamental failures. The solution demonstrates strong comprehension of the passage's argumentative structure and disciplinary scope.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a highly technical scientific passage containing dense jargon, numerical data, and methodology descriptions to ensure the prompt extracts meaningful high-level topics (e.g., 'machine learning optimization') rather than low-level implementation details or raw statistics</td>
+                <td class="prompt-inputs"><strong>content:</strong> We implemented a convolutional neural network architecture with batch normalization and residual connections to classify high-resolution satellite imagery for land-use segmentation. Our model achieved 94.7% mean intersection-over-union (mIoU) across 12 land-cover classes using the Adam optimizer with learning rate decay (initial lr=0.001, decay=0.95 per epoch) and categorical cross-entropy loss. We trained on 50,000 augmented tiles (256×256 pixels) from Sentinel-2 multispectral data, employing random horizontal/vertical flips and 15-degree rotations. The network comprises 5 convolutional blocks with max-pooling, skip connections merging features at multiple scales, and a softmax output layer. Validation on 10,000 held-out tiles demonstrated robust generalization with minimal overfitting (training loss: 0.087, validation loss: 0.094), outperforming baseline U-Net (91.2% mIoU) and SegNet (89.8% mIoU) architectures on identical datasets.</td>
+                <td class="criteria">• Extracts high-level research topics (e.g., 'deep learning for image segmentation', 'satellite image classification', 'neural network optimization') rather than implementation details or raw metrics<br>• Avoids including low-level numerical values, hyperparameters, or dataset statistics as separate topics<br>• Returns results as a JSON array of strings with meaningful, generalizable topic labels</td>
+                <td class="output"><pre>```json
+[
+  "convolutional neural network",
+  "batch normalization",
+  "residual connections",
+  "land-use segmentation",
+  "satellite imagery classification",
+  "mean intersection-over-union",
+  "Adam optimizer",
+  "learning rate decay",
+  "categorical cross-entropy loss",
+  "data augmentation",
+  "Sentinel-2 multispectral data",
+  "convolutional blocks",
+  "max-pooling",
+  "skip connections",
+  "softmax output layer",
+  "generalization",
+  "overfitting",
+  "U-Net architecture",
+  "SegNet architecture",
+  "land-cover classification"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements: it is a valid JSON array of strings with only topic labels and no extra commentary. However, it has notable deficiencies against the secondary criteria. The criteria explicitly state to extract 'high-level research topics' and 'avoid including...implementation details or raw metrics.' The solution violates this by including low-level technical specifications like 'Adam optimizer', 'categorical cross-entropy loss', 'max-pooling', and 'softmax output layer'—these are implementation choices, not research topics. Similarly, 'Sentinel-2 multispectral data' is a specific dataset reference rather than a generalizable topic. While the solution captures many legitimate high-level topics, the inclusion of these implementation details represents a meaningful deviation from the stated criteria.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a passage containing overlapping and hierarchical concepts (e.g., a biology article discussing 'cellular respiration', 'mitochondrial function', and 'ATP production') to evaluate whether the prompt groups related subtopics appropriately or lists them separately, and handles topic abstraction levels consistently</td>
+                <td class="prompt-inputs"><strong>content:</strong> Cellular respiration is a fundamental metabolic pathway through which cells generate ATP, the primary energy currency of life. Mitochondrial function is central to this process, with the inner mitochondrial membrane housing the electron transport chain and ATP synthase complex. During oxidative phosphorylation, protons are pumped across the cristae, creating a chemiosmotic gradient that drives ATP production. In anaerobic conditions, cells rely on glycolysis and fermentation to produce ATP, though these pathways generate significantly less energy per glucose molecule than aerobic respiration. The efficiency of ATP synthesis is regulated by cellular energy demands, with uncoupling proteins in brown adipose tissue allowing mitochondria to dissipate the proton gradient as heat rather than producing ATP, a process crucial for thermogenesis in mammals.</td>
+                <td class="criteria">• Extracts all distinct topics mentioned, including both broad concepts (cellular respiration, mitochondrial function) and specific mechanisms (electron transport chain, ATP synthase, chemiosmotic gradient, oxidative phosphorylation)<br>• Handles hierarchical relationships appropriately—either grouping related subtopics under parent concepts or listing them separately with consistency<br>• Returns output as a valid JSON array of strings</td>
+                <td class="output"><pre>```json
+[
+  "Cellular respiration",
+  "ATP synthesis",
+  "Mitochondrial function",
+  "Electron transport chain",
+  "ATP synthase",
+  "Oxidative phosphorylation",
+  "Chemiosmotic gradient",
+  "Glycolysis",
+  "Fermentation",
+  "Aerobic respiration",
+  "ATP efficiency",
+  "Uncoupling proteins",
+  "Brown adipose tissue",
+  "Thermogenesis",
+  "Anaerobic conditions"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics extracted from the passage, with no extra commentary or explanation. The response contains only the JSON array as required. Regarding secondary criteria, the solution extracts all distinct topics mentioned in the text and handles the hierarchical relationships appropriately by listing related concepts separately with consistency. The extraction is thorough and accurate, capturing both major concepts and specific mechanisms. The two minor weaknesses identified are negligible—'ATP efficiency' is a reasonable interpretation of the passage's discussion of ATP synthesis efficiency, and 'Anaerobic conditions' provides useful context even if somewhat redundant with glycolysis/fermentation. These do not significantly detract from an otherwise excellent extraction.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

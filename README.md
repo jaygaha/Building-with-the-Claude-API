@@ -34,6 +34,21 @@ Learn how to systematically evaluate and grade prompt outputs using datasets, mo
 | [`004_code_based_grading.ipynb`](./002-Prompt-evaluation/004_code_based_grading.ipynb) | Combine syntax validation (JSON, Python, Regex) with model grading |
 | [`005_exercise.ipynb`](./002-Prompt-evaluation/005_exercise.ipynb) | Exercise: Enhance the model grader with solution criteria |
 
+### Module 3: Prompt Engineering Techniques
+
+📁 [`003-Prompt-engineering/`](./003-Prompt-engineering/)
+
+Master essential prompt engineering techniques to improve Claude's output quality, consistency, and accuracy.
+
+| Notebook | Description |
+|----------|-------------|
+| [`001_prompting.ipynb`](./003-Prompt-engineering/001_prompting.ipynb) | Introduction to prompt engineering with the PromptEvaluator framework |
+| [`002_being_clear_direct.ipynb`](./003-Prompt-engineering/002_being_clear_direct.ipynb) | Writing clear and direct prompts for better results |
+| [`003_being_specific.ipynb`](./003-Prompt-engineering/003_being_specific.ipynb) | Using guidelines and step-by-step instructions for complex tasks |
+| [`004_xml.ipynb`](./003-Prompt-engineering/004_xml.ipynb) | Structuring prompts with XML tags for clarity and organization |
+| [`005_providing_examples.ipynb`](./003-Prompt-engineering/005_providing_examples.ipynb) | One-shot and multi-shot examples to guide model behavior |
+| [`006_prompting_exercise.ipynb`](./003-Prompt-engineering/006_prompting_exercise.ipynb) | Exercise: Extract topics from scholarly articles |
+
 ## Setup
 
 ### Prerequisites
