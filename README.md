@@ -49,6 +49,27 @@ Master essential prompt engineering techniques to improve Claude's output qualit
 | [`005_providing_examples.ipynb`](./003-Prompt-engineering/005_providing_examples.ipynb) | One-shot and multi-shot examples to guide model behavior |
 | [`006_prompting_exercise.ipynb`](./003-Prompt-engineering/006_prompting_exercise.ipynb) | Exercise: Extract topics from scholarly articles |
 
+### Module 4: Tool Use with Claude
+
+📁 [`004-Tool-use-with-Claude/`](./004-Tool-use-with-Claude/)
+
+Learn how to extend Claude's capabilities by defining tools, handling tool calls, and building multi-turn agentic workflows.
+
+| Notebook | Description |
+|----------|-------------|
+| [`001_tools_function.ipynb`](./004-Tool-use-with-Claude/001_tools_function.ipynb) | Introduction to tool functions for accessing real-time information |
+| [`002_tools_schemas.ipynb`](./004-Tool-use-with-Claude/002_tools_schemas.ipynb) | Creating JSON schemas to define tool arguments |
+| [`003_tools_handling_message_blocks.ipynb`](./004-Tool-use-with-Claude/003_tools_handling_message_blocks.ipynb) | Handling multi-block messages with text and tool use content |
+| [`004_tools_sending_tool_results.ipynb`](./004-Tool-use-with-Claude/004_tools_sending_tool_results.ipynb) | Executing functions and sending results back to Claude |
+| [`005_tools_multi-turn-conversations.ipynb`](./004-Tool-use-with-Claude/005_tools_multi-turn-conversations.ipynb) | Calling multiple tools in sequence to answer a single question |
+| [`006_tools_implementing_multiple_turns.ipynb`](./004-Tool-use-with-Claude/006_tools_implementing_multiple_turns.ipynb) | Building a conversation loop that runs until tool use completes |
+| [`007_tools_using_multiple_tools.ipynb`](./004-Tool-use-with-Claude/007_tools_using_multiple_tools.ipynb) | Integrating multiple tools into a single implementation |
+| [`008_tools_batch_tools.ipynb`](./004-Tool-use-with-Claude/008_tools_batch_tools.ipynb) | Running multiple tool calls in parallel within a single message |
+| [`009_tools_structured_data.ipynb`](./004-Tool-use-with-Claude/009_tools_structured_data.ipynb) | Using tools to extract structured data reliably |
+| [`010_tools_fine_grained_tool_calling.ipynb`](./004-Tool-use-with-Claude/010_tools_fine_grained_tool_calling.ipynb) | Combining tool use with streaming for real-time updates |
+| [`011_tools_text_edit.ipynb`](./004-Tool-use-with-Claude/011_tools_text_edit.ipynb) | Using Claude's built-in text editor tool for file operations |
+| [`012_tools_web_search.ipynb`](./004-Tool-use-with-Claude/012_tools_web_search.ipynb) | Enabling Claude's built-in web search tool for current information |
+
 ## Setup
 
 ### Prerequisites
