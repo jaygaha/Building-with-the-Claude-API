@@ -70,6 +70,26 @@ Learn how to extend Claude's capabilities by defining tools, handling tool calls
 | [`011_tools_text_edit.ipynb`](./004-Tool-use-with-Claude/011_tools_text_edit.ipynb) | Using Claude's built-in text editor tool for file operations |
 | [`012_tools_web_search.ipynb`](./004-Tool-use-with-Claude/012_tools_web_search.ipynb) | Enabling Claude's built-in web search tool for current information |
 
+### Module 5: Retrieval-Augmented Generation (RAG)
+
+📁 [`005-Retrieval-Augmented-Generation/`](./005-Retrieval-Augmented-Generation/)
+
+Build RAG pipelines from scratch, covering chunking strategies, embeddings, vector search, lexical search, and advanced retrieval techniques.
+
+> **Additional setup required for this module:**
+> - Install the Voyage AI package: `pip install voyageai`
+> - Add your Voyage AI API key to `.env`: `VOYAGE_API_KEY="your_key_here"` ([Get one here](https://dash.voyageai.com/))
+
+| Notebook | Description |
+|----------|-------------|
+| [`001_introducing-RAG.ipynb`](./005-Retrieval-Augmented-Generation/001_introducing-RAG.ipynb) | Text chunking strategies: size-based, structure-based, and semantic-based |
+| [`002_embeddings.ipynb`](./005-Retrieval-Augmented-Generation/002_embeddings.ipynb) | Generating text embeddings for semantic search over document chunks |
+| [`003_vectordb.ipynb`](./005-Retrieval-Augmented-Generation/003_vectordb.ipynb) | Complete RAG flow with chunking, embeddings, vector storage, and similarity search |
+| [`004_bm25.ipynb`](./005-Retrieval-Augmented-Generation/004_bm25.ipynb) | BM25 lexical search as a complement to semantic search |
+| [`005_hybrid.ipynb`](./005-Retrieval-Augmented-Generation/005_hybrid.ipynb) | Hybrid search combining semantic and lexical retrieval with Reciprocal Rank Fusion |
+| [`006_reranking.ipynb`](./005-Retrieval-Augmented-Generation/006_reranking.ipynb) | Reranking retrieved documents with Claude for improved accuracy |
+| [`007_contextual.ipynb`](./005-Retrieval-Augmented-Generation/007_contextual.ipynb) | Contextual retrieval to preserve document context in chunked passages |
+
 ## Setup
 
 ### Prerequisites
