@@ -90,6 +90,21 @@ Build RAG pipelines from scratch, covering chunking strategies, embeddings, vect
 | [`006_reranking.ipynb`](./005-Retrieval-Augmented-Generation/006_reranking.ipynb) | Reranking retrieved documents with Claude for improved accuracy |
 | [`007_contextual.ipynb`](./005-Retrieval-Augmented-Generation/007_contextual.ipynb) | Contextual retrieval to preserve document context in chunked passages |
 
+### Module 6: Features of Claude
+
+📁 [`006-Feature-of-Claude/`](./006-Feature-of-Claude/)
+
+Explore Claude's advanced built-in features including extended thinking, vision, PDF processing, citations, caching, and code execution.
+
+| Notebook | Description |
+|----------|-------------|
+| [`001_thinking.ipynb`](./006-Feature-of-Claude/001_thinking.ipynb) | Extended thinking for complex reasoning before generating responses |
+| [`002_images.ipynb`](./006-Feature-of-Claude/002_images.ipynb) | Vision capabilities for analyzing and understanding images |
+| [`003_pdf.ipynb`](./006-Feature-of-Claude/003_pdf.ipynb) | Reading and analyzing PDF files for document processing |
+| [`004_citations.ipynb`](./006-Feature-of-Claude/004_citations.ipynb) | Citations to trace answers back to specific source locations |
+| [`005_caching.ipynb`](./006-Feature-of-Claude/005_caching.ipynb) | Prompt caching to speed up responses and reduce costs |
+| [`006_code_execution.ipynb`](./006-Feature-of-Claude/006_code_execution.ipynb) | Files API and code execution for delegating complex tasks |
+
 ## Setup
 
 ### Prerequisites
