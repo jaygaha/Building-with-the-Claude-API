@@ -105,6 +105,28 @@ Explore Claude's advanced built-in features including extended thinking, vision,
 | [`005_caching.ipynb`](./006-Feature-of-Claude/005_caching.ipynb) | Prompt caching to speed up responses and reduce costs |
 | [`006_code_execution.ipynb`](./006-Feature-of-Claude/006_code_execution.ipynb) | Files API and code execution for delegating complex tasks |
 
+### Module 7: Model Context Protocol (MCP)
+
+📁 [`007-Model-Context-Protocol/`](./007-Model-Context-Protocol/)
+
+Learn how to build MCP servers and clients to extend Claude with tools, resources, and reusable prompts through a standardized protocol.
+
+> **Additional setup required for this module:**
+> - Install [uv](https://github.com/astral-sh/uv) (recommended): `curl -LsSf https://astral.sh/uv/install.sh | sh`
+> - Run `uv sync` inside the `cli_project` directory to install dependencies
+> - Add `CLAUDE_MODEL` to the project's `.env` file (e.g., `CLAUDE_MODEL="claude-sonnet-4-5"`)
+
+| File | Description |
+|------|-------------|
+| [`NOTES.md`](./007-Model-Context-Protocol/NOTES.md) | Concise reference notes on MCP concepts and the sample project |
+| [`cli_project/mcp_server.py`](./007-Model-Context-Protocol/cli_project/mcp_server.py) | MCP server defining tools, resources, and prompts using FastMCP |
+| [`cli_project/mcp_client.py`](./007-Model-Context-Protocol/cli_project/mcp_client.py) | MCP client connecting to servers via stdio transport |
+| [`cli_project/main.py`](./007-Model-Context-Protocol/cli_project/main.py) | Entry point wiring the MCP client with an interactive CLI chat |
+| [`cli_project/core/chat.py`](./007-Model-Context-Protocol/cli_project/core/chat.py) | Multi-turn tool execution loop with Claude |
+| [`cli_project/core/cli_chat.py`](./007-Model-Context-Protocol/cli_project/core/cli_chat.py) | CLI chat with `@` document mentions and `/` command prompts |
+| [`cli_project/core/tools.py`](./007-Model-Context-Protocol/cli_project/core/tools.py) | Tool discovery and execution across multiple MCP clients |
+| [`cli_project/core/cli.py`](./007-Model-Context-Protocol/cli_project/core/cli.py) | Interactive CLI with tab-completion and auto-suggest |
+
 ## Setup
 
 ### Prerequisites
