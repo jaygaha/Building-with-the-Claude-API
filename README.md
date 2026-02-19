@@ -127,6 +127,26 @@ Learn how to build MCP servers and clients to extend Claude with tools, resource
 | [`cli_project/core/tools.py`](./007-Model-Context-Protocol/cli_project/core/tools.py) | Tool discovery and execution across multiple MCP clients |
 | [`cli_project/core/cli.py`](./007-Model-Context-Protocol/cli_project/core/cli.py) | Interactive CLI with tab-completion and auto-suggest |
 
+### Module 8: Anthropic Apps
+
+📁 [`008-Anthropic-Apps/`](./008-Anthropic-Apps/)
+
+Explore powerful applications built by Anthropic — Claude Code and Computer Use — alongside a starter project for building MCP-based document tools.
+
+> **Additional setup required for this module:**
+> - Install [uv](https://github.com/astral-sh/uv) if not already installed: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+> - Run inside `app_starter/`: `uv venv && source .venv/bin/activate && uv pip install -e .`
+> - Run the MCP server: `uv run main.py`
+> - Run tests: `uv run pytest`
+
+| File | Description |
+|------|-------------|
+| [`NOTES.md`](./008-Anthropic-Apps/NOTES.md) | Overview notes on Claude Code and Computer Use |
+| [`app_starter/main.py`](./008-Anthropic-Apps/app_starter/main.py) | MCP server entry point registering document and math tools |
+| [`app_starter/tools/document.py`](./008-Anthropic-Apps/app_starter/tools/document.py) | Tool to convert binary documents (PDF, DOCX) to Markdown using MarkItDown |
+| [`app_starter/tools/math.py`](./008-Anthropic-Apps/app_starter/tools/math.py) | Tool to add two numbers with documented examples |
+| [`app_starter/tests/test_document.py`](./008-Anthropic-Apps/app_starter/tests/test_document.py) | Tests for the document conversion tool |
+
 ## Setup
 
 ### Prerequisites
