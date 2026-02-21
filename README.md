@@ -145,9 +145,19 @@ Explore two powerful Anthropic applications — Claude Code and Computer Use —
 |------|-------------|
 | [`NOTES.md`](./008-Anthropic-Apps/NOTES.md) | Notes on Claude Code, Computer Use, `/init`, and MCP server registration |
 | [`app_starter/main.py`](./008-Anthropic-Apps/app_starter/main.py) | FastMCP server entry point registering document and math tools |
-| [`app_starter/tools/document.py`](./008-Anthropic-Apps/app_starter/tools/document.py) | Tool to convert PDF/DOCX files on disk to Markdown via MarkItDown |
+| [`app_starter/tools/document.py`](./008-Anthropic-Apps/app_starter/tools/document.py) | Tool to convert PDF/DOCX files to Markdown via MarkItDown |
 | [`app_starter/tools/math.py`](./008-Anthropic-Apps/app_starter/tools/math.py) | Reference tool implementation demonstrating the expected tool definition pattern |
 | [`app_starter/tests/test_document.py`](./008-Anthropic-Apps/app_starter/tests/test_document.py) | pytest tests for the document conversion tool |
+
+### Module 9: Agents and Workflows
+
+📁 [`009-Agents-and-workflows/`](./009-Agents-and-workflows/)
+
+Learn the core strategies for building multi-step AI systems — chaining, routing, parallelization workflows — and fully autonomous agents powered by tools.
+
+| File | Description |
+|------|-------------|
+| [`NOTES.md`](./009-Agents-and-workflows/NOTES.md) | Concise reference notes on workflows, agents, and when to use each strategy |
 
 ## Setup
 
